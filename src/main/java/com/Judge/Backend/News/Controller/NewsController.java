@@ -1,4 +1,4 @@
-package com.Judge.Backend.News;
+package com.Judge.Backend.News.Controller;
 
 import com.Judge.Backend.News.Dto.RequestDto;
 import org.springframework.http.ResponseEntity;
