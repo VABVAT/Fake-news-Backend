@@ -9,9 +9,7 @@ import lombok.experimental.FieldDefaults;
 import org.springframework.stereotype.Component;
 
 @Component
-@Data
 @AllArgsConstructor
-@NoArgsConstructor
 public class GeminiPrompt {
 
     public String buildPrompt(RequestDto dto) {

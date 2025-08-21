@@ -11,7 +11,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @AllArgsConstructor
-@RequiredArgsConstructor(onConstructor = @__(@Autowired))
+@NoArgsConstructor()
 public class GeminiParsingService {
     GeminiPrompt geminiPrompt;
 
