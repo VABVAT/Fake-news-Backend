@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Backend
+
+gemini:
+  api:
+    key: # put the key here
