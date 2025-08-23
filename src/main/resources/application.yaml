@@ -4,4 +4,4 @@ spring:
 
 gemini:
   api:
-    key: # put the key here
+    key:
