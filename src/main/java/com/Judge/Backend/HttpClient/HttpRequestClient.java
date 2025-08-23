@@ -3,7 +3,6 @@ package com.Judge.Backend.HttpClient;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.experimental.FieldDefaults;
-import org.springframework.context.annotation.Bean;
 import org.springframework.http.*;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
@@ -16,13 +15,7 @@ import java.util.Map;
 @FieldDefaults(level = AccessLevel.PRIVATE, makeFinal = true)
 public class HttpRequestClient {
 
-    // Can be used other places as well
-    @Bean
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
-
-    RestTemplate restTemplate;
+    RestTemplate restTemplate = new RestTemplate();
 
     /**
      * Executes an HTTP request with flexible configuration.

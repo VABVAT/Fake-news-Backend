@@ -1,11 +1,14 @@
 package com.Judge.Backend.News.Dto;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;
 import lombok.experimental.FieldDefaults;
 
 import java.util.List;
 
+
+@JsonIgnoreProperties(ignoreUnknown = true)
 @Builder
 @Data
 @AllArgsConstructor
@@ -24,12 +27,18 @@ public class FakeNewsVerdictDto {
     @JsonProperty("recommended_actions")
     String recommendedAction;
 
+    @JsonProperty("reasoning")
+    String reasoning;
+
+
     @Data
     @NoArgsConstructor
     @AllArgsConstructor
     static public class Evidence {
+        @JsonProperty("quote")
         String quote;    // quoted claim or sentence from the input
+
+        @JsonProperty("source")
         String source;   // url or authoritative source (or "none found")
-        Double score;    // optional relevance/confidence for this piece of evidence
     }
 }
