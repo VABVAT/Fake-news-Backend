@@ -18,4 +18,6 @@ public class GeminiConfig {
     @Value("${gemini.api.key}")
     String geminiApiKey;
 
+    @Value("${gemini.api.endpoint}")
+    String endPoint;
 }
